@@ -17,8 +17,8 @@ const loadPlaces = function(coords) {
         //return loadPlaceFromAPIs(coords);
     //}
 
-    //return Promise.resolve(PLACES);
-//};
+    return Promise.resolve(PLACES);
+};
 
 // getting places from REST APIs
 function loadPlaceFromAPIs(position) {
@@ -100,7 +100,7 @@ window.onload = () => {
                     };
 
                     icon.addEventListener('click', clickListener);
-                    
+
                     scene.appendChild(icon);
                 });
             })
