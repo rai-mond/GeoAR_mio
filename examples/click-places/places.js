@@ -13,12 +13,12 @@ const loadPlaces = function(coords) {
         },
     ];
 
-    if (method === 'api') {
-        return loadPlaceFromAPIs(coords);
-    }
+    //if (method === 'api') {
+        //return loadPlaceFromAPIs(coords);
+    //}
 
-    return Promise.resolve(PLACES);
-};
+    //return Promise.resolve(PLACES);
+//};
 
 // getting places from REST APIs
 function loadPlaceFromAPIs(position) {
